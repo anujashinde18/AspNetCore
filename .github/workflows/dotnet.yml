@@ -25,10 +25,14 @@ jobs:
       run: dotnet test --no-build --verbosity normal
     - name: Publish
       run: dotnet publish
-    - name: Download a Build Artifact
-      uses: actions/download-artifact@v2.0.8
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v2.2.1
       with:
     # Artifact name
-        name: Drop
-    # Destination path
-        path: D:\Drop
+        name: artifact
+    # A file, directory or wildcard pattern that describes what to upload
+        path: path/to/artifact/
+    # The desired behavior if no files are found using the provided path.
+
+    
+    
