@@ -34,7 +34,7 @@ jobs:
       with:
     # Artifact name
         name: artifact
-        path: /home/runner/work/AspNetCore/AspNetCore/samplecoreapp/bin/Release
+        path: /home/runner/work/AspNetCore/AspNetCore/samplecoreapp/
     
     
     
