@@ -26,7 +26,7 @@ jobs:
     - name: dotnet build and publish
       run:  |
           dotnet restore
-          dotnet build --configuration Debug
+          dotnet build --configuration Release
           dotnet publish -c Release -o '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/myapp' 
    
     - name: Upload a Build Artifact
@@ -34,7 +34,7 @@ jobs:
       with:
     # Artifact name
         name: artifact
-        path: /home/runner/work/AspNetCore/AspNetCore/samplecoreapp/bin/Debug
+        path: /home/runner/work/AspNetCore/AspNetCore/samplecoreapp/bin/Release
     
     
     
